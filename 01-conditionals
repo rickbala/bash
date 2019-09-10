@@ -1,14 +1,11 @@
 #!/bin/bash
 
-tempo=5
-
 echo "Ola"
 
-
-if [ $tempo -le 10 ]; then
-	echo "tempo eh menor ou igual a 10"
-elif test $tempo == 10; then
-	echo "tempo eh igual a 10!"
+if test $1 -eq 10; then
+	echo "$1 eh igual a 10!"
+elif [ $1 -lt 10 ]; then
+	echo "$1 eh menor ou igual a 10"
 else
-	echo "tempo so pode ser maior que 10!"
+	echo "$1 so pode ser maior que 10!"
 fi
